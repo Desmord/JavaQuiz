@@ -39,6 +39,8 @@ body {
     font-weight: 700;
     color: var(--color-five);
     margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .container__question {
@@ -65,6 +67,8 @@ body {
     background-color: var(--color-four);
     font-size: 1rem;
     border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .answers__answer:hover {

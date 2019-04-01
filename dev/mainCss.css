@@ -1,8 +1,108 @@
-body{
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+html {
+    --color-one: rgba(96, 102, 118, 1);
+    --color-two: rgba(84, 190, 159, 1);
+    --color-three: rgb(101, 158, 141);
+    --color-four: rgba(33, 82, 78, 1);
+    --color-five: rgba(34, 55, 46, 1);
+}
+
+body {
     padding: 0;
     margin: 0;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: rgb(84, 190, 159);
+    background-color: var(--color-two);
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    flex-direction: column;
+    width: 1000px;
+    height: 500px;
+    background-color: var(--color-three);
+    border-radius: 20px;
+}
+
+.container__tittle {
+    width: 100px;
+    height: 60px;
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--color-five);
+    margin-bottom: 10px;
+}
+
+.container__question {
+    width: 700px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--color-four);
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px 7px var(--color-four);
+    font-size: 1.2rem;
+}
+
+.container__answers {
+    width: 900px;
+    height: 200px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.answers__answer {
+    width: 280px;
+    height: 130px;
+    background-color: var(--color-four);
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.answers__answer:hover {
+    cursor: pointer;
+    background-color: var(--color-five);
+}
+
+.conatiner__result {
+    width: 800px;
+    height: 100px;
+    flex-direction: column;
+}
+
+.result__text {
+    width: 300px;
+    height: 60px;
+
+}
+.result__points{
+    width: 130px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: var(--color-two);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.container__reset {
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: var(--color-one);
+    font-size: 1.2rem;
+}
+
+.container__reset:hover {
+    cursor: pointer;
+    background-color: var(--color-five);
 }

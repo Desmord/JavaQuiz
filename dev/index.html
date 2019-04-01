@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="author" content="Mikołaj Chojnacki">
+    <title>Quiz</title>
 </head>
-<body>
-    Witam na stronie hej
+
+<body class="flex">
+    <div class="container flex">
+        <div class="container__tittle flex">Quiz</div>
+        <div class="container__question flex"></div>
+        <div class="container__answers flex">
+            <div class="answers__answer flex"></div>
+            <div class="answers__answer flex"></div>
+            <div class="answers__answer flex"></div>
+        </div>
+        <div class="conatiner__result flex">
+            <div class="result__text flex">Poprawne odpowiedzi:</div>
+            <div class="result__points flex">3 &nbsp;/&nbsp;4</div>
+        </div>
+        <div class="container__reset flex">RESET</div>
+    </div>
 </body>
+
 </html>
